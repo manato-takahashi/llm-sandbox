@@ -5,7 +5,9 @@ description = "Add your description here"
 authors = [
     { name = "manato-takahashi", email = "manato.takahashi86@gmail.com" }
 ]
-dependencies = []
+dependencies = [
+    "datasets>=2.21.0",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 

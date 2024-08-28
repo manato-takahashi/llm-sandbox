@@ -35,6 +35,7 @@ dill==0.3.8
 filelock==3.15.4
     # via datasets
     # via huggingface-hub
+    # via transformers
 frozenlist==1.4.1
     # via aiohttp
     # via aiosignal
@@ -43,6 +44,8 @@ fsspec==2024.6.1
     # via huggingface-hub
 huggingface-hub==0.24.6
     # via datasets
+    # via tokenizers
+    # via transformers
 idna==3.8
     # via requests
     # via yarl
@@ -55,9 +58,11 @@ numpy==2.1.0
     # via datasets
     # via pandas
     # via pyarrow
+    # via transformers
 packaging==24.1
     # via datasets
     # via huggingface-hub
+    # via transformers
 pandas==2.2.2
     # via datasets
 pyarrow==17.0.0
@@ -69,14 +74,25 @@ pytz==2024.1
 pyyaml==6.0.2
     # via datasets
     # via huggingface-hub
+    # via transformers
+regex==2024.7.24
+    # via transformers
 requests==2.32.3
     # via datasets
     # via huggingface-hub
+    # via transformers
+safetensors==0.4.4
+    # via transformers
 six==1.16.0
     # via python-dateutil
+tokenizers==0.19.1
+    # via transformers
 tqdm==4.66.5
     # via datasets
     # via huggingface-hub
+    # via transformers
+transformers==4.44.2
+    # via llm-sandbox
 typing-extensions==4.12.2
     # via huggingface-hub
 tzdata==2024.1

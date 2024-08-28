@@ -17,6 +17,8 @@ aiohttp==3.10.5
     # via fsspec
 aiosignal==1.3.1
     # via aiohttp
+asttokens==2.4.1
+    # via stack-data
 async-timeout==4.0.3
     # via aiohttp
 attrs==24.2.0
@@ -26,12 +28,23 @@ certifi==2024.7.4
 charset-normalizer==3.3.2
     # via requests
 colorama==0.4.6
+    # via ipython
     # via tqdm
+comm==0.2.2
+    # via ipykernel
 datasets==2.21.0
     # via llm-sandbox
+debugpy==1.8.5
+    # via ipykernel
+decorator==5.1.1
+    # via ipython
 dill==0.3.8
     # via datasets
     # via multiprocess
+exceptiongroup==1.2.2
+    # via ipython
+executing==2.0.1
+    # via stack-data
 filelock==3.15.4
     # via datasets
     # via huggingface-hub
@@ -49,11 +62,27 @@ huggingface-hub==0.24.6
 idna==3.8
     # via requests
     # via yarl
+ipykernel==6.29.5
+    # via llm-sandbox
+ipython==8.26.0
+    # via ipykernel
+jedi==0.19.1
+    # via ipython
+jupyter-client==8.6.2
+    # via ipykernel
+jupyter-core==5.7.2
+    # via ipykernel
+    # via jupyter-client
+matplotlib-inline==0.1.7
+    # via ipykernel
+    # via ipython
 multidict==6.0.5
     # via aiohttp
     # via yarl
 multiprocess==0.70.16
     # via datasets
+nest-asyncio==1.6.0
+    # via ipykernel
 numpy==2.1.0
     # via datasets
     # via pandas
@@ -62,19 +91,38 @@ numpy==2.1.0
 packaging==24.1
     # via datasets
     # via huggingface-hub
+    # via ipykernel
     # via transformers
 pandas==2.2.2
     # via datasets
+parso==0.8.4
+    # via jedi
+platformdirs==4.2.2
+    # via jupyter-core
+prompt-toolkit==3.0.47
+    # via ipython
+psutil==6.0.0
+    # via ipykernel
+pure-eval==0.2.3
+    # via stack-data
 pyarrow==17.0.0
     # via datasets
+pygments==2.18.0
+    # via ipython
 python-dateutil==2.9.0.post0
+    # via jupyter-client
     # via pandas
 pytz==2024.1
     # via pandas
+pywin32==306
+    # via jupyter-core
 pyyaml==6.0.2
     # via datasets
     # via huggingface-hub
     # via transformers
+pyzmq==26.2.0
+    # via ipykernel
+    # via jupyter-client
 regex==2024.7.24
     # via transformers
 requests==2.32.3
@@ -84,21 +132,37 @@ requests==2.32.3
 safetensors==0.4.4
     # via transformers
 six==1.16.0
+    # via asttokens
     # via python-dateutil
+stack-data==0.6.3
+    # via ipython
 tokenizers==0.19.1
     # via transformers
+tornado==6.4.1
+    # via ipykernel
+    # via jupyter-client
 tqdm==4.66.5
     # via datasets
     # via huggingface-hub
     # via transformers
+traitlets==5.14.3
+    # via comm
+    # via ipykernel
+    # via ipython
+    # via jupyter-client
+    # via jupyter-core
+    # via matplotlib-inline
 transformers==4.44.2
     # via llm-sandbox
 typing-extensions==4.12.2
     # via huggingface-hub
+    # via ipython
 tzdata==2024.1
     # via pandas
 urllib3==2.2.2
     # via requests
+wcwidth==0.2.13
+    # via prompt-toolkit
 xxhash==3.5.0
     # via datasets
 yarl==1.9.4

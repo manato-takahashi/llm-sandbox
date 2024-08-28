@@ -8,6 +8,7 @@ authors = [
 dependencies = [
     "datasets>=2.21.0",
     "transformers>=4.44.2",
+    "ipykernel>=6.29.5",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"

@@ -164,6 +164,8 @@ numpy==2.1.0
     # via pandas
     # via pyarrow
     # via transformers
+oauthlib==3.2.2
+    # via requests-oauthlib
 overrides==7.7.0
     # via jupyter-server
 packaging==24.1
@@ -231,7 +233,10 @@ requests==2.32.3
     # via datasets
     # via huggingface-hub
     # via nbdime
+    # via requests-oauthlib
     # via transformers
+requests-oauthlib==2.0.0
+    # via llm-sandbox
 rfc3339-validator==0.1.4
     # via jsonschema
     # via jupyter-events
